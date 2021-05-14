@@ -9,6 +9,11 @@ import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 
+/*
+ * 기존 날자 관련 API(java.util.Date SimpleDateFormatter 등) 는 thread-safe 하지 않고
+ * 사용자에게 잠재적인 동시성 문제가 발생할 수 있기에 기존 API 대산 JAVA 8 부터지원하는
+ * 새로운 API(java.time) 를 사용할것을 권장한다!!! 
+ */
 public class SampleDateTime {
 
 	public static void main(String[] args) {
